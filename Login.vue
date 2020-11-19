@@ -84,7 +84,7 @@ export default {
         .then((response) => {
           this.message = response;
           console.log(response);
-          this.$router.push({ path: "/about" });
+          this.$router.push({ path: "/accounts/login/:username" });
         })
         .catch((error) => {
           console.log(error.response);
